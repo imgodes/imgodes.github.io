@@ -2,8 +2,8 @@
 title: Malabarismo com link simbólico
 author: imgodes
 date: 2022-12-03 18:40:00 -0300
-categories: [sistema opercional,linux]
-tags: [tutorial]
+categories: [Guia, Linux]
+tags: [tips and tricks]
 math: true
 img_path: /assets/img/linksimb/
 mermaid: true

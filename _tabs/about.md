@@ -21,7 +21,7 @@ Abaixo tem algumas informaçoes sobre mim.
 | Hardening de Servidores Linux
 | Estudos de casos de uso para criação de alarmísticas
 | Parsing / extração de campos / normalização de logs
-| Investigaçao de alertas em SIEM(Qradar, Graylog e SOAR)
+| Investigaçao de alertas em SIEM(Qradar, Splunk, Elasticsearch, Graylog e SOAR)
 | Uso do Mitre para categorizaçao de ataques
 
 ## Tech Skills

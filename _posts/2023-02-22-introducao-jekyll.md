@@ -3,15 +3,15 @@ title: Seu site pessoal gratis
 author: "imgodes"
 img_path: /assets/img/intro-jekyll/
 date: 2023-02-22 18:40:00 -0300
-categories: [web]
-tags: [tutorial]
+categories: [Guia, Website]
+tags: [tips and tricks]
 math: true
 mermaid: true
 ---
 
 Aqui, vou explicar como fazer a instalação do seu futuro site pessoal. 
 
-# Abordagem
+# Abordagem 
 
 Primeiro apresento o conceito, para que mesmo que não deseje seguir usando o mesmo tema que eu, ainda assim, consiga seguir seu próprio caminho, customizando a sua maneira.
 
@@ -26,7 +26,8 @@ Não é preciso decorar nem aprender tudo só leia os conceitos com calma e tudo
 
 O Sistema Operacional, não é um requisito, é mais um aviso:
 
-Tudo foi feito em um Linux baseado em Ubuntu, o mesmo pode ser reproduzido em qualquer distribuição Linux, e também em máquina virtual. {: .prompt-warning }
+> Tudo foi feito em um Linux baseado em Ubuntu, o mesmo pode ser reproduzido em qualquer distribuição Linux, e também em máquina virtual.
+{: .prompt-warning}
 
 Minha distro é a seguinte:
 ```
@@ -59,7 +60,8 @@ Jekyll é um framework (tecnicamente falando, é uma engine de parsing) usado pa
 
 Ou seja, há por meio dele podemos escrever e compartilhar, por meio do seu próprio site, sem precisar se aprofundar em HTML e CSS. Mas antes de chegar nessa parte vamos entender os componentes do Jekyll.
 
-Tem uma [playlist no youtube](https://youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB) com vídeos curtos sobre o Jekyll, mas está em inglês. {: .prompt-info }
+> Tem uma [playlist no youtube](https://youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB) com vídeos curtos sobre o Jekyll, mas está em inglês. 
+{: .prompt-info }
 
 Na essência, ele usa 3 arquivos:
 ```
@@ -113,7 +115,8 @@ Jekyll é um gem, os plugins Jekyll e o tema que usaremos também são gems.
 
 O `Gemfile` é um arquivo que contém uma lista de gems usados pelo site. 
 
-NAO instale pacotes Ruby Gems (chamados de gems) ao longo deste tutorial, a menos que você saiba o que está fazendo. Acredita em mim, vai dar bigode se fizer isso. “Se tem placa tem história” - Sócrates {: .prompt-warning }
+> NAO instale pacotes Ruby Gems (chamados de gems) ao longo deste tutorial, a menos que você saiba o que está fazendo. Acredita em mim, vai dar bigode se fizer isso. “Se tem placa tem história” - Sócrates 
+{: .prompt-danger }
 
 # Instalação
 Primeiro siga as intruções de instalação do [Jekyll](https://jekyllrb.com/docs/installation/) a seguir para **Linux Ubuntu**:
