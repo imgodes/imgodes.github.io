@@ -9,18 +9,18 @@ math: true
 mermaid: true
 ---
 
-Vou tentar explicar como fazer a instalação do requisitos e configuração do seu futuro site pessoal. 
+Aqui, vou explicar como fazer a instalação do seu futuro site pessoal. 
 
 # Abordagem
 
-Primeiro apresentado os conceitos, para que, mesmo que nao deseje seguir usando o mesmo tema que eu, ainda assim, consiga seguir seu próprio caminho, customizando a sua maneira.
+Primeiro apresento o conceito, para que mesmo que não deseje seguir usando o mesmo tema que eu, ainda assim, consiga seguir seu próprio caminho, customizando a sua maneira.
 
 Eu poderia seguir só mostrando como instalar as parada sem explicar nada, que é o que os tutoriais gringos fazem. Mas o fato é que as documentações e vídeos de teóricos já estão todos na língua deles, então vou tentar desenvolver também alguns pontos da teoria que acho importante conhecer. Tem coisa que eu só traduzi da documentação oficial. 
 
 Não é preciso decorar nem aprender tudo só leia os conceitos com calma e tudo vai fazer sentido no final.
 
 
-*Certamente não sou a melhor pessoa para falar sobre frontend web, mas como não achei esse conteúdo com português, vale a pena tentar!* 
+*Certamente não sou a melhor pessoa para falar sobre frontend web, mas como não achei esse conteúdo em português, vale a pena tentar!* 
 
 # Requisitos
 
@@ -37,12 +37,6 @@ DISTRIB_DESCRIPTION="Pop!_OS 22.04 LTS"
 ```
 
 Qualquer outra distribuição pode ser usada sem problemas, desde que tenha comandos equivalentes, com o mesmo efeito.
-
-A documentaçao do Jekyll tem instruições para cada SO também se quiser dar uma olhada:
-- [macOS](https://jekyllrb.com/docs/installation/macos/)
-- [Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/)
-- [Other Linux](https://jekyllrb.com/docs/installation/other-linux/)
-- [Windows](https://jekyllrb.com/docs/installation/windows/)
 
 Também recomendo que tenha conhecimento básico em git e github, ou no mínimo, saiba fazer um fork pela interface web do github e conheça os comandos abaixo:
 ```
@@ -63,9 +57,7 @@ A partir daqui você pode pular para instação, ou ler sequencialmente. Acho qu
 # Introdução ao Jekyll
 Jekyll é um framework (tecnicamente falando, é uma engine de parsing) usado para transformar arquivos de texto em páginas estáticas para o seu website pessoal! 
 
-Ou seja, temos agora um jeito simples de escrever e compartilhar o conhecimento na web, por meio do seu próprio site, sem precisar se aprofundar em HTML e CSS. 
-
-Mas antes de chegar nessa parte vamos entender os componentes do Jekyll.
+Ou seja, há por meio dele podemos escrever e compartilhar, por meio do seu próprio site, sem precisar se aprofundar em HTML e CSS. Mas antes de chegar nessa parte vamos entender os componentes do Jekyll.
 
 Tem uma [playlist no youtube](https://youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB) com vídeos curtos sobre o Jekyll, mas está em inglês. {: .prompt-info }
 
@@ -111,31 +103,34 @@ Veja o esquema a seguir (clique para melhor visualização):
 ![jekylllayoutsingle](jekylllayoutsingle.png)
 _Exemplo de como o documento de texto se torna uma página html_
 
-Acho que essa descrição é o suficiente para que entenda o processo de instalação.
-
 ## Gems
 Gems são basicamente códigos, programas ou funcionalidades escritos na linguagem Ruby, que vem por meio dos pacotes Gems. Os pacotes gem podem desempenhar funcionalidades como:
 - Conversão de objetos ruby para arquivo JSON;
 - Paginação;
 - Interagir com APIs como a do GitHub.
 
-Jekyll é um gem, os plugins Jekyll, o tema que usaremos também são gems. 
+Jekyll é um gem, os plugins Jekyll e o tema que usaremos também são gems. 
 
-O `Gemfile` é um arquivo que contém uma lista de gems usados pelo site. Mas nem todos os gems serão listados nele (calma, é de boa). 
-
-Preste atenção nessa parte, eu fiz muita coisa errada aqui na primeira vez rs.
+O `Gemfile` é um arquivo que contém uma lista de gems usados pelo site. 
 
 NAO instale pacotes Ruby Gems (chamados de gems) ao longo deste tutorial, a menos que você saiba o que está fazendo. Acredita em mim, vai dar bigode se fizer isso. “Se tem placa tem história” - Sócrates {: .prompt-warning }
 
 # Instalação
-Primeiro siga as intruçoes de instalaçao do [Jekyll](https://jekyllrb.com/docs/installation/) a seguir para **Linux Ubuntu**:
+Primeiro siga as intruções de instalação do [Jekyll](https://jekyllrb.com/docs/installation/) a seguir para **Linux Ubuntu**:
 
 ```shell
 sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
 
+A documentação do Jekyll também tem instruições para cada SO, caso precise:
+- [macOS](https://jekyllrb.com/docs/installation/macos/)
+- [Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/)
+- [Other Linux](https://jekyllrb.com/docs/installation/other-linux/)
+- [Windows](https://jekyllrb.com/docs/installation/windows/)
+
+
 Configure um diretório de instalação do gem para sua conta de usuário. Os comandos a seguir adicionarão variáveis de ambiente ao seu arquivo `~/.bashrc`{: .filepath} para configurar o caminho de instalação da gem, caso use outro shell, basta substituir o bashrc pelo arquivo que o seu shell usa.
-Caso não faça a mínima ideia do que é isso de bashrc consulte o [anexo 1](# Anexo 1 - Bashrc) que tem uma explicação rápida sobre ele.
+Caso não faça a mínima ideia do que é isso de bashrc consulte o [anexo 1](#anexo-1-bashrc) que tem uma explicação rápida sobre ele.
 Bom, seguindo em frente:
 
 ```shell
@@ -145,10 +140,10 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## Escolha e instalaçao do Tema
+## Instalação do Tema
 Existem diversos temas que mudam a aparencia do seu site. O que eu escolhi foi o [Chirpy](https://chirpy.cotes.page/posts/getting-started/), cuidado pois podem haver diferenças caso escolha outro tema.
 
-Existem duas formas de instalar usar o Chirpy, eu seguirei com a mais fácil que é usando o (template)[https://github.com/cotes2020/chirpy-starter/] basta clicar em <kbd>Use this template</kbd> > <kbd>Create a new repository</kbd>, e nomeie o repositório como `SEU-USERNAME.github.io`, em que, `SEU-USERNAME` é o seu nome de usuário do github.
+Existem duas formas de instalar usar o Chirpy, eu seguirei com a mais fácil que é usando o [template](https://github.com/cotes2020/chirpy-starter/) basta clicar em <kbd>Use this template</kbd> > <kbd>Create a new repository</kbd>, e nomeie o repositório como `SEU-USERNAME.github.io`, em que, `SEU-USERNAME` é o seu nome de usuário do github.
 
 Agora entre no seu repositório criado e na aba <kbd>Settings</kbd> depois clique em <kbd>Pages</kbd> e abaixo de <kbd>Build and deployment</kbd> selecione <kbd>Github Actions</kbd>. E é por meio dessas configurações que o nossa página será implementada. 
 
@@ -163,11 +158,11 @@ Com o repositório, podemos seguir com a instação dos gems necessários:
 bundle install 
 ```
 
-Feita a instalação, agora é só executar `bundle exec jekyll serve -l -w` e acessar a página em [127.0.0.1:4000](127.0.0.1:4000).
+Feita a instalação, agora é só executar `bundle exec jekyll serve -l -w --port 4000` e acessar a página em 127.0.0.1:4000.
 
 Para configuração, confira o post de configuração do jekyll (em breve).
 
-# Anexo 1 - Bashrc
+# Anexo 1 bashrc
 
 O shell é basicamente uma interface de acesso ao sistema base. 
 O Bash é o interpretador de comandos de shell (o seu pode ser outro).
@@ -195,7 +190,7 @@ CHUNG, C. Getting Started. Disponível em: <https://chirpy.cotes.page/posts/gett
 
 COSTA, M. Usando Jekyll e GitHub Pages. Disponível em: <https://murilo.tech/posts/usando-jekyll-e-github-pages/>. Acesso em: 24 fev. 2023.
 
-DOMINGUEZ, J. How Jekyll Works | ruhoh universal static blog generator. Disponível em: <http://jekyllbootstrap.com/lessons/jekyll-introduction.html>. Acesso em: 24 fev. 2023.
+DOMINGUEZ, J. How Jekyll Works ; ruhoh universal static blog generator. Disponível em: <http://jekyllbootstrap.com/lessons/jekyll-introduction.html>. Acesso em: 24 fev. 2023.
 
 JEKYLL TEAM. Command Line Usage. Disponível em: <https://jekyllrb.com/docs/usage/>. Acesso em: 24 fev. 2023.
 
