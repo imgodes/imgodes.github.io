@@ -12,10 +12,11 @@ const config = {
   url: 'https://imgodes.github.io',
   baseUrl: '/',
   organizationName: 'imgodes',
-  projectName: 'imgodes', 
-
-  onBrokenLinks: 'throw',
+  projectName: 'imgodes.github.io', 
+  trailingSlash: false,
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  deploymentBranch: 'deployment',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'pt-br'],
