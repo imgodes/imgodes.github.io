@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[208],{5776:e=>{e.exports=JSON.parse('{"label":"dica","permalink":"/pt-br/blog/tags/dica","allTagsPath":"/pt-br/blog/tags","count":1}')}}]);
