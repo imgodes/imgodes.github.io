@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[446],{1258:e=>{e.exports=JSON.parse('{"label":"teoria","permalink":"/pt-br/blog/tags/teoria","allTagsPath":"/pt-br/blog/tags","count":1}')}}]);
