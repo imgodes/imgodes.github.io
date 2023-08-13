@@ -71,10 +71,6 @@ const config = {
         },
         items: [
           {
-            type: 'localeDropdown',
-            position: 'left',
-          },
-          {
             type: 'docSidebar',
             sidebarId: 'bookSidebar',
             position: 'left',
@@ -91,13 +87,17 @@ const config = {
             label: 'LinkedIn',
             position: 'right',
           },
+          {
+            type: 'localeDropdown',
+            position: 'left',
+          },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Content',
+            title: 'Conteúdo',
             items: [
               {
                 label: 'Hunt',
