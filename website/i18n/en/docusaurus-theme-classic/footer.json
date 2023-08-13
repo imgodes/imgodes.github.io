@@ -1,0 +1,34 @@
+{
+  "link.title.Content": {
+    "message": "Content",
+    "description": "The title of the footer links column with title=Content in the footer"
+  },
+  "link.title.Contact": {
+    "message": "Contact",
+    "description": "The title of the footer links column with title=Contact in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Books": {
+    "message": "Books",
+    "description": "The label of footer link with label=Books linking to /docs/intro"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.com/channels/gabreell"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/imgodes"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 Security Stuff.",
+    "description": "The footer copyright"
+  }
+}

@@ -15,11 +15,22 @@ const config = {
   projectName: 'imgodes.github.io', 
   trailingSlash: false,
   onBrokenLinks: 'warn',
+  noIndex: false,
   onBrokenMarkdownLinks: 'warn',
   deploymentBranch: 'deployment',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'pt-br'],
+    defaultLocale: 'pt',
+    locales: ['en', 'pt'],
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+    },
   },
 
   presets: [
@@ -31,15 +42,15 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/imgodes/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: ({ docPath }) =>
+            `https://github.com/imgodes/imgodes.github.io/blob/main/website/docs/${docPath}`,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/imgodes/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: ({blogPath}) =>
+            `https://github.com/imgodes/imgodes.github.io/blob/main/website/blog/${blogPath}`,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -51,7 +62,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Godes',
@@ -61,10 +71,14 @@ const config = {
         },
         items: [
           {
+            type: 'localeDropdown',
+            position: 'left',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'bookSidebar',
             position: 'left',
-            label: 'Books',
+            label: 'Hunt',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -83,10 +97,10 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Conteúdo',
+            title: 'Content',
             items: [
               {
-                label: 'Books',
+                label: 'Hunt',
                 to: '/docs/intro',
               },
               {
@@ -105,7 +119,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Mais',
             items: [
               {
                 label: 'GitHub',

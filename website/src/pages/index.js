@@ -10,6 +10,7 @@ import styles from './index.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import logo from "@site/static/img/mask.jpg"
 import noise from "@site/static/img/fumaca.png"
+import Translate, {translate} from '@docusaurus/Translate';
 
 console.log(logo);
 function HomepageHeader() {
@@ -114,7 +115,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
-          Let the hunt begin
+          Let the hunt begin!
           </Link>
         </div>
       </div>
