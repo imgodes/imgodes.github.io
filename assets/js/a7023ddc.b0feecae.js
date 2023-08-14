@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[713],{3457:a=>{a.exports=JSON.parse('[{"label":"pr\xe1tica","permalink":"/blog/tags/pratica","count":4},{"label":"tutorial","permalink":"/blog/tags/tutorial","count":4},{"label":"teoria","permalink":"/blog/tags/teoria","count":1},{"label":"dica","permalink":"/blog/tags/dica","count":1}]')}}]);

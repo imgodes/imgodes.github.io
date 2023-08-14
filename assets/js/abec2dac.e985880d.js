@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[670],{2353:e=>{e.exports=JSON.parse('{"label":"infraestrutura","permalink":"/blog/tags/infraestrutura","allTagsPath":"/blog/tags","count":1}')}}]);
