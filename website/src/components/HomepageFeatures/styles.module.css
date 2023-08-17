@@ -9,3 +9,19 @@
   height: 200px;
   width: 200px;
 }
+
+.buttonSpacing {
+  margin-right: 100 px; /* Ajuste o valor conforme necessário */
+}
+
+
+.buttonWrapper {
+  display: block;
+  margin-bottom: 10px; /* Ou qualquer valor que você preferir para o espaçamento vertical */
+}
+
+/* index.module.css */
+
+.temp-style {
+  border: 2px solid red; /* Adicione um estilo de borda vermelha temporário */
+}

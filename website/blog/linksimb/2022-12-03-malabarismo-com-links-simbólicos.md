@@ -4,13 +4,22 @@ authors: imgodes
 date: 2022-12-03 18:40:00 -0300
 categories: [Linux]
 tags: [prática,tutorial]
+image: ./disk3.png
 ---
+
+Como usar links simbólicos para aumentar o espaço em disco sem reiniciar o servidor.
+
+![disk3](./disk3.png)
+
+<!--truncate-->
 
 [Symbolic link - Wikipedia](https://en.wikipedia.org/wiki/Symbolic_link#Storage_of_symbolic_links)
 
 [How to save space with-ymlinks](https://linuxconfig.org/how-to-save-space-with-symlinks-and-mount-points)
 
-![Disk](./disk.png) Muitas vezes o disco fica cheio, e diante da impossibilidade de expandir a partição raiz, podemos optar pela combinação de adição de um novo disco com o uso de links simbólicos. Observe o desenho, a fim de entender a situação problema;
+![Disk](./disk.png) 
+
+Quando o disco fica cheio, e diante da impossibilidade de expandir a partição raiz, podemos optar pela combinação de adição de um novo disco com o uso de links simbólicos. Observe o desenho, a fim de entender a situação problema;
 Num primeiro momento, você apenas sabe que sua aplicação não consegue mais escrever em arquivos, pois o disco está cheio. Bom, podemos usar o comando abaixo, para achar qual diretório está ocupando mais espaço: 
 
 ```bash

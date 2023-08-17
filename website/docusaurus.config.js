@@ -88,6 +88,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Godes',
@@ -103,11 +108,7 @@ const config = {
             label: 'Hunt',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/imgodes',
-            label: 'GitHub',
-            position: 'right',
-          },
+          {to: '/about', label: 'About', position: 'right'},
           {
             href: 'https://www.linkedin.com/in/gguedescruz/',
             label: 'LinkedIn',

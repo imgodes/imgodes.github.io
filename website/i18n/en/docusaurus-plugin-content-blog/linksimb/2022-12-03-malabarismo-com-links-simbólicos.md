@@ -6,6 +6,12 @@ categories: [Linux]
 tags: [prática,tutorial]
 ---
 
+Como usar links simbólicos para aumentar o espaço em disco sem reiniciar o servidor.
+
+![disk3](./disk3.png)
+
+<!--truncate-->
+
 [Symbolic link - Wikipedia](https://en.wikipedia.org/wiki/Symbolic_link#Storage_of_symbolic_links)
 
 [How to save space with-ymlinks](https://linuxconfig.org/how-to-save-space-with-symlinks-and-mount-points)

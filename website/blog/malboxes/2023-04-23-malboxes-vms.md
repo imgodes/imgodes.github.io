@@ -15,9 +15,12 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import TOCInline from '@theme/TOCInline';
 
-
-
 Como provisionar máquinas virtuais para estudo de malwares e engenharia reversa.
+
+![robot](./robot.png)
+
+<!--truncate-->
+
 
 A GoSecure possui uma ferramenta voltada para análise de malware e engenharia reversa chamada Malboxes, com ela podemos provisionar VMs Windows, destruí-las e faze-las do zero de novo bem facilmente. Vi essa necessidade durante o curso do [Rafael Sousa](https://www.instagram.com/hackingnaweboficial/), e outros estudos semelhantes.
 

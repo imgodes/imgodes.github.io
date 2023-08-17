@@ -1,16 +1,17 @@
 ---
-title: Purple Team - Metasploitable3 & DetectionLab
+title: Metasploitable & DetectionLab
 authors: "imgodes"
-img_path: /assets/img/meta-detec/
+image: ./heros.jpg
 date: 2023-04-26 18:52:00 -0300
 categories: [Cybersecurity, Attack & Detection]
 tags: [prática,tutorial]
-math: true
-toc: true
-pin: true
 ---
 
-Criado para adição do [Metasploitable3](https://github.com/rapid7/metasploitable3) (com seus logs e telemetrias) ao [DetectionLab](https://detectionlab.network/).
+Adição do [Metasploitable3](https://github.com/rapid7/metasploitable3) (com seus logs e telemetrias) ao [DetectionLab](https://detectionlab.network/).
+
+![a](./heros.jpg)
+
+<!--truncate-->
 
 > Observação: esse guia pode ser um pouco difícil de acompanhar caso não conheça o Detection Lab, mas basta instala-lo uma vez que tudo ficará mais fácil de entender.
 

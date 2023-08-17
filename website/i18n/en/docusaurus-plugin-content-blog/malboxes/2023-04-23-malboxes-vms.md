@@ -2,7 +2,7 @@
 title: Creating Malboxes VMs
 authors: imgodes
 description: How to provision virtual machines for reverse engineering study.
-image: ./heros.jpg
+image: ./robot.png
 date: 2023-04-23 12:52:00 -0300
 tags: [reverse engineering,infrastructure,malboxes]
 hide_table_of_contents: false
@@ -15,10 +15,14 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import TOCInline from '@theme/TOCInline';
 
+How to provision virtual machines (VMs) for malware and reverse engineering purposes.
+
+![robot](./robot.png)
+
+<!--truncate-->
 
 # Introduction
 
-How to provision virtual machines (VMs) for malware and reverse engineering purposes.
 
 Made by GoSecure, Malboxes is a tool meant to help to building safe and featureful Windows VMs. Create VMs, destroy them, and building them again could be pretty easy with Malboxes. I felt this need during the [Rafael Sousa's](https://www.instagram.com/hackingnaweboficial/) course.
 
