@@ -5,13 +5,13 @@
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "yarn run start": {
-      "name": "yarn run start",
-      "command": "yarn run start",
+      "name": "install",
+      "command": "cd website && yarn install",
       "runAtStart": true
     },
     "cd website && yarn install": {
       "name": "cd website && yarn install",
-      "command": "cd website && yarn install"
+      "command": "cd website && yarn start"
     }
   }
 }
