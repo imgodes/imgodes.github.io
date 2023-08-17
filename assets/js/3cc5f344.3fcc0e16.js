@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4636],{4267:e=>{e.exports=JSON.parse('{"label":"engenharia reversa","permalink":"/blog/tags/engenharia-reversa","allTagsPath":"/blog/tags","count":1}')}}]);

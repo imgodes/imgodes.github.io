@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[704],{4443:e=>{e.exports=JSON.parse('{"label":"malboxes","permalink":"/blog/tags/malboxes","allTagsPath":"/blog/tags","count":1}')}}]);
