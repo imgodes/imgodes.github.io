@@ -44,6 +44,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: ({ docPath }) =>
             `https://github.com/imgodes/imgodes.github.io/blob/main/website/docs/${docPath}`,
+          remarkPlugins: [
+            [require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}],
+          ],
         },
         blog: {
           showReadingTime: true,
@@ -51,10 +54,19 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: ({blogPath}) =>
             `https://github.com/imgodes/imgodes.github.io/blob/main/website/blog/${blogPath}`,
+          remarkPlugins: [
+            [
+              require('@docusaurus/remark-plugin-npm2yarn'),
+              {converters: ['pnpm']},
+            ],
+          ],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        pages: {
+          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn')],
+        },        
       }),
     ],
   ],

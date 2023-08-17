@@ -30,5 +30,21 @@
   "copyright": {
     "message": "Copyright © 2023 Security Stuff.",
     "description": "The footer copyright"
+  },
+  "link.title.Conteúdo": {
+    "message": "Content",
+    "description": "The title of the footer links column with title=Conteúdo in the footer"
+  },
+  "link.title.Contato": {
+    "message": "Contact",
+    "description": "The title of the footer links column with title=Contato in the footer"
+  },
+  "link.title.Mais": {
+    "message": "More",
+    "description": "The title of the footer links column with title=Mais in the footer"
+  },
+  "link.item.label.Hunt": {
+    "message": "Hunt",
+    "description": "The label of footer link with label=Hunt linking to /docs/intro"
   }
 }
