@@ -114,9 +114,21 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/intro">
-          Let the hunt begin!
-          </Link>
+          <div style={{ marginRight: '10px', marginBottom: '10px' }}>
+            <Link className={clsx("button", "button--secondary", "button--lg")} to="/docs/intro">
+              Hunt
+            </Link>
+          </div>
+          <div style={{ marginRight: '10px', marginBottom: '10px' }}>
+            <Link className={clsx("button", "button--secondary", "button--lg")} to="/blog">
+              Blog
+            </Link>
+          </div>
+          <div style={{ marginBottom: '10px', display: 'block'}}>
+            <Link className={clsx("button", "button--secondary", "button--lg")} to="/about">
+              Sobre Mim
+            </Link>
+          </div>
         </div>
       </div>
     </header>
