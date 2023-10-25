@@ -3,6 +3,30 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+ @use 'sidebar';
+ @use 'doc';
+ .heading-badge {
+  font-size: 0.9rem;
+  + p {
+    margin-top: 1rem;
+  }
+}
+
+.theme-doc-sidebar-item-link {
+  font-size: 0.8rem;
+}
+
+.arrow {
+  transition: all 0.3s ease-in-out;
+  display: grid;
+  margin-left: 6px;
+
+  path {
+    stroke: var(--ifm-link-color);
+  }
+}
+
+
 
 /* You can override the default Infima variables here. */
 :root {

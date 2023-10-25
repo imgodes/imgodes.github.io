@@ -1,0 +1,7 @@
+{
+    "label": "Purple Team",
+    "position": 1.2,
+    "customProps": {
+      "sidebar_pathname": "purpleteam"
+    }
+  }
